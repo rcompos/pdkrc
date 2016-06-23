@@ -418,4 +418,6 @@ roles:
           rpm -hiv --replacefiles /tmp/libpng-1.6.21-2.fc24.x86_64.rpm
           cd /tmp; curl -O ftp://195.220.108.108/linux/fedora/linux/releases/24/Everything/x86_64/os/Packages/d/dia-0.97.3-5.fc24.x86_64.rpm
           rpm -hiv /tmp/dia-0.97.3-5.fc24.x86_64.rpm
+          systemctl set-default graphical.target
+          systemctl start graphical.target
 
